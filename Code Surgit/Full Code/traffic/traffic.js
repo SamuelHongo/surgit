@@ -2,7 +2,7 @@ export async function getTrafficAdjustedTime(initialAlarmTime) {
     const origin = "ORIGEN_COORDINATES";
     const destination = "DESTINO_COORDINATES";
     const apiKey = "AIzaSyA3-aHb7s-d1KQ_ZmsswLYfOb3zwn5r1d8";
-    const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&departure_time=now&key=${AIzaSyA3-aHb7s-d1KQ_ZmsswLYfOb3zwn5r1d8}`;
+    const url = `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${destination}&departure_time=now&key=${apiKey}`;
   
     const response = await fetch(url);
     const data = await response.json();
