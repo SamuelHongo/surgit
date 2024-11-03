@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="agenda una alarma para el trafico">
+    <meta name="keywords" content="alarma, horario, trafico, puntual">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgit</title>
+    <style>
+        /* Estilos actualizados */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0E141B; /* Gris oscuro */
+            color: wheat; /* Texto en wheat */
+        }
+
+        h1, h2 {
+            color: wheat; /* Títulos en wheat */
+            text-align: center;
+        }
+
+        /* Cabecera */
+        .cabecera {
+            background-color: #1890FF; /* Azul claro */
+            color: wheat;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #0E141B; /* Gris oscuro */
+        }
+
+        nav .linea {
+            border: none;
+            border-top: 2px solid wheat;
+            margin: 0;
+        }
+
+        nav #menu {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav #menu ul li {
+            margin: 0 15px;
+        }
+
+        nav #menu ul li a {
+            color: wheat;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav #menu ul li a:hover {
+            color: #1890FF; /* Azul claro en hover */
+        }
+
+        /* Sección principal */
+        main {
+            padding: 20px;
+        }
+
+        main section {
+            max-width: 800px;
+            margin: auto;
+            background-color: wheat; /* Fondo en wheat */
+            color: #0E141B; /* Texto en gris oscuro */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main article p {
+            line-height: 1.6;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0E141B; /* Gris oscuro */
+            color: wheat; /* Texto en wheat */
+        }
+
+        footer q {
+            display: block;
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1>Surgit</h1> 
+    </header>
+
+    <nav>
+        <div> 
+            <hr class="linea">
+            <div id="menu">
+                <ul class="navi">
+                    <li><a href="alarm/alarm.html">Alarma</a></li>
+                    <li><a href="maps/map.html">Mapa</a></li>
+                    <li><a href="interfaz/interfaz.html">Ingresar</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    
+    <main>
+        <section>
+            <div>
+                <article>
+                    <h2 id="Quienessomos">Quienes somos</h2>
+                    <p>Tu proyecto es una alarma inteligente que se adapta en función del tráfico en la ruta seleccionada. <br>
+                        La idea es que la alarma calcule el tiempo necesario para llegar a tu destino tomando en cuenta las condiciones de tráfico en tiempo real. <br>
+                        Así, en lugar de sonar siempre a la misma hora, ajusta la hora de activación para asegurarte de que salgas a tiempo. <br>
+                        Esto ayuda a optimizar tu jornada, reducir el estrés por llegar tarde, y aprovechar mejor el tiempo, ajustando automáticamente la alarma en función de los cambios en el tráfico.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <br>
+    
+    <footer>
+        <br>
+        <q><em>Copyright: Todos los derechos reservados</em></q><br>
+        <q><em>Surgit, llega siempre a tiempo</em></q>
+        <br><br>
+        <q>-Samuel Jaramillo y Luciana Perez (creadores)</q>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <style>
+        /* Estilos en #0E141B (gris oscuro), #1890FF (azul claro), wheat, y negro */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0E141B; /* Gris oscuro */
+            color: wheat; /* Color de texto */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .login-box {
+            background-color: #1890FF; /* Azul claro */
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .clock-image {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: wheat; /* Texto principal en wheat */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: wheat; /* Etiquetas en wheat */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0E141B; /* Gris oscuro */
+            color: wheat;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: wheat; /* Fondo wheat */
+            color: #0E141B; /* Texto gris oscuro */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #cccccc; /* Fondo más claro en hover */
+        }
+
+        .register-btn {
+            margin-top: 10px;
+            background-color: #0E141B; /* Gris oscuro */
+            color: wheat; /* Texto en wheat */
+            border: 2px solid wheat;
+        }
+
+        .register-btn:hover {
+            background-color: wheat; /* Fondo wheat */
+            color: #0E141B; /* Texto gris oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="reloj.png.jpeg" alt="Reloj" class="clock-image">
+            <h2>Inicio de Sesión</h2>
+            <form action="login.html" method="post">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+            <button onclick="window.location.href='register.html'" class="register-btn">Registrarse</button>
+            <script src="interfaz.js"></script>
+        </div>
+    </div>
+</body>
+</html>
