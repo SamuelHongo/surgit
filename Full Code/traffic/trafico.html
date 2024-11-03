@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Tráfico en Medellín</title>
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tráfico en Tiempo Real - Área Metropolitana de Medellín</h3>
+    <div id="map"></div>
+
+    <script>
+        let map;
+
+        function initMap() {
+            // Ubicación centrada en el Área Metropolitana de Medellín
+            const medellinArea = { lat: 6.25184, lng: -75.56359 };
+
+            // Inicialización del mapa
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: medellinArea,
+            });
+
+            // Activación de la capa de tráfico
+            const trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+        }
+    </script>
+
+    <!-- Incluye la API de Google Maps con tu clave API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUO4oEJq89NFzu8adP7qvHr_vOv7C4Ck&callback=initMap">
+    </script>
+</body>
+</html>
